@@ -1,4 +1,6 @@
 #include "binary_trees.h"
+#include "12-binary_tree_leaves.c"
+#include "9-binary_tree_height.c"
 
 /**
  * _pow - prints string
@@ -8,11 +10,11 @@
  * Return: int
  */
 
-int _pow(int i, int j)
+size_t _pow(size_t i, size_t j)
 {
-	if (y == 0)
+	if (j == 0)
 		return (1);
-	if (y == 1)
+	if (j == 1)
 		return (i);
 	return (i * _pow(i, j - 1));
 }
